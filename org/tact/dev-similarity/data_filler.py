@@ -12,8 +12,20 @@ source:
 
 '''
 
+import random
+
+def get_random(start, end):
+    return random.randint(start, end)
+
+def get_random_1():
+    return random.randint(1, 10)
+
 def main():
-    pass
+    for x in range(20):
+        #print(x)
+        random_one = get_random(1, 100)
+        print(random_one)        
+    
 
 if __name__ == '__main__':
     main()
